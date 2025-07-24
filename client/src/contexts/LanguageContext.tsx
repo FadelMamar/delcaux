@@ -47,8 +47,8 @@ const translations = {
     'nav.delcaux': 'Delcaux',
 
     // Hero Section
-    'hero.title': 'Empowering African businesses through automation and AI',
-    'hero.subtitle': 'Transform your operations with cutting-edge technology solutions.',
+    'hero.title': 'Automate. Integrate. Innovate.',
+    'hero.subtitle': 'Empowering West African businesses with AI, automation, and Odoo ERP.',
     'hero.cta1': "Let's Automate Your Business",
     'hero.cta2': 'Learn More',
     'hero.clients': 'Clients Served',
@@ -157,8 +157,8 @@ const translations = {
     'nav.delcaux': 'Delcaux',
 
     // Hero Section
-    'hero.title': 'Autonomiser les entreprises africaines grâce à l\'automatisation et à l\'IA',
-    'hero.subtitle': 'Transformez vos opérations avec des solutions technologiques de pointe.',
+    'hero.title': 'Automatiser. Intégrer. Innover.',
+    'hero.subtitle': 'Autonomiser les entreprises ouest-africaines avec l\'IA, l\'automatisation et Odoo ERP.',
     'hero.cta1': 'Automatisons Votre Entreprise',
     'hero.cta2': 'En Savoir Plus',
     'hero.clients': 'Clients Servis',
