@@ -20,9 +20,6 @@ export default function ServicesSection() {
           <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-4">
             {t('services.title')}
           </h2>
-          <p className="text-xl font-worksans text-blue-grey max-w-3xl mx-auto">
-            {t('services.subtitle')}
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
