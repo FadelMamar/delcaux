@@ -47,7 +47,7 @@ const translations = {
     'nav.delcaux': 'Delcaux',
 
     // Hero Section
-    'hero.title': 'Empowering West African businesses through automation and AI',
+    'hero.title': 'Empowering African businesses through automation and AI',
     'hero.subtitle': 'Transform your operations with cutting-edge technology solutions tailored for the African market. From business automation to AI-powered solutions.',
     'hero.cta1': "Let's Automate Your Business",
     'hero.cta2': 'Learn More',
@@ -157,7 +157,7 @@ const translations = {
     'nav.delcaux': 'Delcaux',
 
     // Hero Section
-    'hero.title': 'Autonomiser les entreprises ouest-africaines grâce à l\'automatisation et à l\'IA',
+    'hero.title': 'Autonomiser les entreprises africaines grâce à l\'automatisation et à l\'IA',
     'hero.subtitle': 'Transformez vos opérations avec des solutions technologiques de pointe adaptées au marché africain. De l\'automatisation des processus aux solutions alimentées par l\'IA.',
     'hero.cta1': 'Automatisons Votre Entreprise',
     'hero.cta2': 'En Savoir Plus',

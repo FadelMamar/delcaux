@@ -16,7 +16,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-montserrat font-bold text-navy-blue leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-montserrat text-navy-blue leading-tight font-semibold">
                 {t('hero.title')}
               </h1>
               <p className="text-xl font-lato text-gray-600 leading-relaxed">
