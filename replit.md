@@ -10,6 +10,19 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+**Added Case Studies Section & Navigation (January 2025)**
+- Created comprehensive Case Studies section with dedicated page at /case-studies route
+- Added Case Studies navigation link to both desktop and mobile menus with multilingual support
+- Implemented 5 real case studies spanning June 2024 to February 2025:
+  * Association Management Application (June 2025) - Mobile app for 200+ member organization
+  * AI Pneumonia Classification System (October 2024) - Healthcare startup AI diagnostic tool
+  * Data Analysis Training for Public Servants (November 2024) - 15-hour government training program
+  * Intelligent Legal Assistant (November-December 2024) - AI chatbot for legal document interaction
+  * AI Training for IT Professionals (February 2025) - 16-hour intensive AI training curriculum
+- Enhanced website to showcase established expertise rather than seeking first clients
+- Added complete French translations for all case study content
+- Updated mobile menu to use LanguageContext translation system consistently
+
 **Completed AboutSection Localization & Font Migration (January 2025)**
 - Updated AboutSection component to use LanguageContext variables instead of hardcoded text
 - Implemented proper translation support for all About section content (title, description, mission, vision, values)

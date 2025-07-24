@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSelector from "./LanguageSelector";
@@ -11,6 +12,8 @@ interface MobileMenuProps {
 }
 
 export default function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuProps) {
+  const { t } = useLanguage();
+  
   if (!isOpen) return null;
 
   const handleNavigate = (sectionId: string) => {
@@ -43,25 +46,32 @@ export default function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuPr
             onClick={() => handleNavigate("home")}
             className="block w-full text-left py-2 text-navy-blue hover:text-blue-grey transition-colors font-medium"
           >
-            Home
+            {t('nav.home')}
           </button>
           <button
             onClick={() => handleNavigate("services")}
             className="block w-full text-left py-2 text-navy-blue hover:text-blue-grey transition-colors font-medium"
           >
-            Services
+            {t('nav.services')}
           </button>
           <button
             onClick={() => handleNavigate("about")}
             className="block w-full text-left py-2 text-navy-blue hover:text-blue-grey transition-colors font-medium"
           >
-            About
+            {t('nav.about')}
           </button>
+          <Link
+            href="/case-studies"
+            onClick={onClose}
+            className="block w-full text-left py-2 text-navy-blue hover:text-blue-grey transition-colors font-medium"
+          >
+            {t('nav.caseStudies')}
+          </Link>
           <button
             onClick={() => handleNavigate("contact")}
             className="block w-full text-left py-2 text-navy-blue hover:text-blue-grey transition-colors font-medium"
           >
-            Contact
+            {t('nav.contact')}
           </button>
           
           <div className="pt-4 border-t">
@@ -69,7 +79,7 @@ export default function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuPr
               onClick={() => handleNavigate("contact")}
               className="w-full bg-navy-blue text-white hover:bg-navy-blue/90"
             >
-              Free Consultation
+              {t('nav.freeConsultation')}
             </Button>
           </div>
         </div>

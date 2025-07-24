@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="text-3xl font-montserrat font-bold">Delcaux</div>
-            <p className="font-worksans text-blue-200 leading-relaxed">
+            <p className="font-lato text-blue-200 leading-relaxed">
               Automation and AI solutions that drive real transformation.
             </p>
             <div className="flex space-x-4">
@@ -24,18 +24,6 @@ export default function Footer() {
                 className="text-blue-200 hover:text-white transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-blue-200 hover:text-white transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-blue-200 hover:text-white transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -51,7 +39,7 @@ export default function Footer() {
                   onClick={() => scrollToSection("services")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Business Automation
+                  Process Automation
                 </button>
               </li>
               <li>
@@ -59,7 +47,7 @@ export default function Footer() {
                   onClick={() => scrollToSection("services")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Odoo ERP Integration
+                  ERP Integration
                 </button>
               </li>
               <li>
@@ -106,14 +94,6 @@ export default function Footer() {
                   onClick={() => scrollToSection("contact")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Careers
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="hover:text-white transition-colors text-left"
-                >
                   Contact
                 </button>
               </li>
@@ -126,26 +106,8 @@ export default function Footer() {
             <ul className="space-y-2 text-blue-200">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
                   Case Studies
                 </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="hover:text-white transition-colors text-left"
-                >
-                  Support
-                </button>
               </li>
             </ul>
           </div>
@@ -153,7 +115,7 @@ export default function Footer() {
 
         <div className="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-blue-200 text-sm">
-            © 2024 Delcaux. All rights reserved.
+            © 2025 Delcaux. All rights reserved.
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a

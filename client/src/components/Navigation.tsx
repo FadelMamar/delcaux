@@ -56,6 +56,12 @@ export default function Navigation() {
               >
                 {t('nav.about')}
               </button>
+              <Link
+                href="/case-studies"
+                className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
+              >
+                {t('nav.caseStudies')}
+              </Link>
               <button
                 onClick={() => scrollToSection("contact")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
