@@ -104,14 +104,10 @@ export default function ServicesSection() {
             </CardHeader>
             <CardContent className="pt-0">
               <p className="text-blue-grey mb-6">
-                Custom artificial intelligence applications including medical image 
-                analysis, predictive analytics, and intelligent chatbots.
+                Custom artificial intelligence applications including predictive 
+                analytics, intelligent chatbots, and automated decision-making systems.
               </p>
               <ul className="text-sm text-blue-grey space-y-2">
-                <li className="flex items-center">
-                  <Check className="text-terracotta mr-2 h-4 w-4" />
-                  Medical AI Diagnostics
-                </li>
                 <li className="flex items-center">
                   <Check className="text-terracotta mr-2 h-4 w-4" />
                   Predictive Analytics
@@ -119,6 +115,10 @@ export default function ServicesSection() {
                 <li className="flex items-center">
                   <Check className="text-terracotta mr-2 h-4 w-4" />
                   Intelligent Chatbots
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-terracotta mr-2 h-4 w-4" />
+                  Decision Support Systems
                 </li>
               </ul>
             </CardContent>
@@ -158,34 +158,7 @@ export default function ServicesSection() {
           </Card>
         </div>
 
-        {/* Featured Service Highlight */}
-        <div className="mt-16 gradient-navy-blue rounded-3xl p-8 lg:p-12 text-white">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-playfair font-bold mb-4">
-                Medical AI: Revolutionizing Healthcare in West Africa
-              </h3>
-              <p className="text-lg mb-6 text-blue-100">
-                Our cutting-edge AI solutions for disease detection in medical 
-                images are helping healthcare providers across the region deliver 
-                faster, more accurate diagnoses.
-              </p>
-              <Button
-                onClick={() => scrollToSection("contact")}
-                className="bg-white text-navy-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Learn About Medical AI
-              </Button>
-            </div>
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400"
-                alt="Medical professionals using AI technology"
-                className="rounded-xl shadow-lg w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );
