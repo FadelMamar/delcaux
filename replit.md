@@ -1,0 +1,95 @@
+# Replit MD
+
+## Overview
+
+This is a full-stack web application built with React (frontend) and Express.js (backend) that serves as a business website for Delcaux, a West African technology company specializing in automation and AI solutions. The application features a modern, responsive design with a contact form system and company information display.
+
+## User Preferences
+
+Preferred communication style: Simple, everyday language.
+
+## System Architecture
+
+The application follows a monorepo structure with a clear separation between client and server code:
+
+- **Frontend**: React with TypeScript, using Vite as the build tool
+- **Backend**: Express.js server with TypeScript
+- **Database**: PostgreSQL with Drizzle ORM (configured but currently using in-memory storage)
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **State Management**: TanStack Query for server state
+- **Form Handling**: React Hook Form with Zod validation
+
+## Key Components
+
+### Frontend Architecture
+- **Component Structure**: Modular React components organized by feature
+- **UI Library**: shadcn/ui components built on Radix UI primitives
+- **Styling**: Tailwind CSS with custom color variables for brand consistency
+- **Routing**: Wouter for client-side routing (lightweight alternative to React Router)
+- **State Management**: TanStack Query for API calls and caching
+
+### Backend Architecture
+- **Server Framework**: Express.js with TypeScript
+- **API Design**: RESTful endpoints for contact form submission
+- **Storage**: Currently using in-memory storage (MemStorage class) with interface for future database integration
+- **Validation**: Zod schemas shared between frontend and backend
+- **Development**: Hot reload with Vite integration
+
+### Database Schema
+The application defines two main entities:
+- **Users**: Basic user management (id, username, password)
+- **Contacts**: Contact form submissions (id, firstName, lastName, email, company, service, message, createdAt)
+
+Currently using Drizzle ORM with PostgreSQL configuration, but the actual storage implementation uses in-memory storage for development.
+
+## Data Flow
+
+1. **Contact Form Submission**:
+   - User fills out contact form on frontend
+   - Form data validated using Zod schema
+   - POST request sent to `/api/contact` endpoint
+   - Server validates and stores contact information
+   - Success/error feedback displayed to user
+
+2. **Contact Retrieval**:
+   - GET request to `/api/contacts` endpoint
+   - Returns all stored contact submissions
+   - Used for admin purposes
+
+## External Dependencies
+
+### Frontend Dependencies
+- **React Ecosystem**: React 18+ with hooks and modern patterns
+- **UI Components**: Radix UI primitives with shadcn/ui styling
+- **Forms**: React Hook Form with Hookform resolvers
+- **HTTP Client**: Fetch API with TanStack Query wrapper
+- **Icons**: Lucide React icons and React Icons for brand icons
+- **Animations**: CSS-based animations with Tailwind
+
+### Backend Dependencies
+- **Server**: Express.js with standard middleware
+- **Database**: Drizzle ORM with PostgreSQL adapter
+- **Validation**: Zod for schema validation
+- **Session**: Connect-pg-simple for PostgreSQL session storage
+- **Development**: tsx for TypeScript execution
+
+## Deployment Strategy
+
+### Development
+- **Frontend**: Vite dev server with HMR
+- **Backend**: tsx with nodemon-like behavior
+- **Database**: PostgreSQL connection via environment variables
+- **Build Process**: Separate build steps for client and server
+
+### Production
+- **Frontend**: Static build output served by Express
+- **Backend**: Compiled JavaScript bundle
+- **Database**: PostgreSQL with connection pooling
+- **Environment**: NODE_ENV-based configuration
+
+### Build Configuration
+- **Client Build**: Vite builds to `dist/public`
+- **Server Build**: esbuild bundles server to `dist/index.js`
+- **Static Assets**: Served from build output directory
+
+The application is designed to be easily deployable to platforms like Replit, with development-specific features like the Replit banner and cartographer plugin for enhanced development experience.

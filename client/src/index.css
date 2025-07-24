@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 20%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 13%, 65%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 5%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 5%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(210, 40%, 98%);
+  --secondary-foreground: hsl(222, 84%, 5%);
+  --accent: hsl(210, 40%, 98%);
+  --accent-foreground: hsl(222, 84%, 5%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(222, 84%, 5%);
+  --radius: 0.5rem;
+  
+  /* Custom Delcaux Colors */
+  --ocean-blue: hsl(219, 79%, 39%);
+  --forest-green: hsl(152, 69%, 19%);
+  --warm-gold: hsl(38, 92%, 50%);
+  --terracotta: hsl(24, 85%, 53%);
+  --charcoal: hsl(215, 25%, 27%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(217, 32%, 17%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-ocean-blue {
+    color: hsl(219, 79%, 39%);
+  }
+  
+  .text-forest-green {
+    color: hsl(152, 69%, 19%);
+  }
+  
+  .text-warm-gold {
+    color: hsl(38, 92%, 50%);
+  }
+  
+  .text-terracotta {
+    color: hsl(24, 85%, 53%);
+  }
+  
+  .text-charcoal {
+    color: hsl(215, 25%, 27%);
+  }
+  
+  .bg-ocean-blue {
+    background-color: hsl(219, 79%, 39%);
+  }
+  
+  .bg-forest-green {
+    background-color: hsl(152, 69%, 19%);
+  }
+  
+  .bg-warm-gold {
+    background-color: hsl(38, 92%, 50%);
+  }
+  
+  .bg-terracotta {
+    background-color: hsl(24, 85%, 53%);
+  }
+  
+  .bg-charcoal {
+    background-color: hsl(215, 25%, 27%);
+  }
+  
+  .hover\:bg-ocean-blue:hover {
+    background-color: hsl(219, 79%, 35%);
+  }
+  
+  .hover\:bg-forest-green:hover {
+    background-color: hsl(152, 69%, 15%);
+  }
+  
+  .gradient-ocean-forest {
+    background: linear-gradient(135deg, hsl(219, 79%, 39%), hsl(152, 69%, 19%));
+  }
+  
+  .gradient-blue-green {
+    background: linear-gradient(135deg, hsl(219, 20%, 97%), hsl(152, 20%, 97%));
+  }
+}
+
+/* Custom font imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
