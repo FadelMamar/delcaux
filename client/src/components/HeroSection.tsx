@@ -31,13 +31,6 @@ export default function HeroSection() {
               >
                 {t('hero.cta1')}
               </Button>
-              <Button
-                variant="outline"
-                onClick={() => scrollToSection("services")}
-                className="border-2 border-navy-blue text-navy-blue px-8 py-4 rounded-lg font-semibold hover:bg-navy-blue hover:text-white transition-colors text-lg"
-              >
-                {t('hero.cta2')}
-              </Button>
             </div>
 
             <div className="flex items-center space-x-8 pt-8">
