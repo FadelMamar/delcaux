@@ -160,6 +160,9 @@ const translations = {
     // Case Studies Section
     "caseStudies.title": "Case Studies",
     "caseStudies.subtitle": "Real projects, real impact. Discover how we've helped businesses transform through technology.",
+    "caseStudies.ctaTitle": "Ready to Create Your Success Story?",
+    "caseStudies.ctaSubtitle": "Join these successful organizations and let us help transform your business with cutting-edge technology solutions.",
+    "caseStudies.ctaButton": "Start Your Project",
     
     "caseStudies.case1.date": "June 2025",
     "caseStudies.case1.title": "Association Management Application",
@@ -325,6 +328,9 @@ const translations = {
     // Case Studies Section
     "caseStudies.title": "Études de Cas",
     "caseStudies.subtitle": "Projets réels, impact réel. Découvrez comment nous avons aidé les entreprises à se transformer grâce à la technologie.",
+    "caseStudies.ctaTitle": "Prêt à Créer Votre Histoire de Succès ?",
+    "caseStudies.ctaSubtitle": "Rejoignez ces organisations prospères et laissez-nous vous aider à transformer votre entreprise avec des solutions technologiques de pointe.",
+    "caseStudies.ctaButton": "Démarrer Votre Projet",
     
     "caseStudies.case1.date": "Juin 2025",
     "caseStudies.case1.title": "Application de Gestion d'Association",

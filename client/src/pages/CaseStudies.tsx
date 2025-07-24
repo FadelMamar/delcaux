@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default function CaseStudies() {
   const { t } = useLanguage();
@@ -172,19 +173,21 @@ export default function CaseStudies() {
       <div className="bg-gradient-to-r from-navy-blue to-blue-grey py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-montserrat font-bold text-white mb-4">
-            Ready to Create Your Success Story?
+            {t("caseStudies.ctaTitle")}
           </h2>
           <p className="text-xl font-worksans text-white/90 mb-8 max-w-2xl mx-auto">
-            Join these successful organizations and let us help transform your
-            business with cutting-edge technology solutions.
+            {t("caseStudies.ctaSubtitle")}
           </p>
           <Link href="/">
             <Button className="bg-white text-navy-blue hover:bg-gray-100 px-8 py-3 text-lg font-medium">
-              Start Your Project
+              {t("caseStudies.ctaButton")}
             </Button>
           </Link>
         </div>
       </div>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
