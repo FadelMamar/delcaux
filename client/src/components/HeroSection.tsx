@@ -58,12 +58,7 @@ export default function HeroSection() {
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
 
-            {/* Floating cards */}
-
-            <div className="absolute -bottom-4 -right-4 bg-navy-blue text-white p-4 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold">99.9%</div>
-              <div className="text-sm">Accuracy Rate</div>
-            </div>
+            
           </div>
         </div>
       </div>
