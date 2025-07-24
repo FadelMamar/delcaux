@@ -81,7 +81,7 @@ const translations = {
     'services.ai.feature3': 'Decision Support Systems',
     'services.ai.badge': 'Advanced AI',
 
-    'services.training.title': 'AI Workshops & Training',
+    'services.training.title': 'Workshops & Training',
     'services.training.description': 'Comprehensive training programs for professionals, educational institutions, and organizations to build AI capabilities.',
     'services.training.feature1': 'Professional Training',
     'services.training.feature2': 'School Programs',
@@ -191,7 +191,7 @@ const translations = {
     'services.ai.feature3': 'Systèmes d\'Aide à la Décision',
     'services.ai.badge': 'IA Avancée',
 
-    'services.training.title': 'Ateliers et Formation IA',
+    'services.training.title': 'Ateliers et Formation',
     'services.training.description': 'Programmes de formation complets pour les professionnels, institutions éducatives et organisations pour développer les capacités en IA.',
     'services.training.feature1': 'Formation Professionnelle',
     'services.training.feature2': 'Programmes Scolaires',
