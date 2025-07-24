@@ -76,7 +76,7 @@ export default function CaseStudies() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <Navigation />
-      
+
       {/* Header */}
       <div className="bg-gradient-mesh text-white py-20 pt-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,7 +85,7 @@ export default function CaseStudies() {
             className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to {t('nav.home')}
+            Back to {t("nav.home")}
           </Link>
           <h1 className="text-5xl font-montserrat font-bold mb-6">
             {t("caseStudies.title")}

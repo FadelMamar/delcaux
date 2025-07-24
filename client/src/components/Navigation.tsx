@@ -14,11 +14,11 @@ export default function Navigation() {
 
   const handleNavigation = (sectionId: string) => {
     // If we're not on the home page, navigate to home first
-    if (location !== '/') {
+    if (location !== "/") {
       window.location.href = `/#${sectionId}`;
       return;
     }
-    
+
     // If we're on home page, scroll to section
     const element = document.getElementById(sectionId);
     if (element) {
@@ -33,13 +33,13 @@ export default function Navigation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-3">
-              <img 
-                src={logoPath} 
-                alt="Delcaux Consulting Logo" 
-                className="w-16 h-16 object-contain" 
+              <img
+                src={logoPath}
+                alt="Delcaux Consulting Logo"
+                className="w-16 h-16 object-contain"
               />
               <span className="text-2xl font-montserrat font-bold text-navy-blue">
-                {t('nav.delcaux')}
+                {t("nav.delcaux")}
               </span>
             </Link>
 
@@ -49,31 +49,31 @@ export default function Navigation() {
                 href="/"
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                {t('nav.home')}
+                {t("nav.home")}
               </Link>
               <button
                 onClick={() => handleNavigation("services")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                {t('nav.services')}
+                {t("nav.services")}
               </button>
               <button
                 onClick={() => handleNavigation("about")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                {t('nav.about')}
+                {t("nav.about")}
               </button>
               <Link
                 href="/case-studies"
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                {t('nav.caseStudies')}
+                {t("nav.caseStudies")}
               </Link>
               <button
                 onClick={() => handleNavigation("contact")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                {t('nav.contact')}
+                {t("nav.contact")}
               </button>
               <LanguageSelector />
             </div>
@@ -83,7 +83,7 @@ export default function Navigation() {
                 onClick={() => handleNavigation("contact")}
                 className="bg-navy-blue text-white px-6 py-2 rounded-lg font-medium hover:bg-navy-blue/90 transition-colors"
               >
-                {t('nav.freeConsultation')}
+                {t("nav.freeConsultation")}
               </Button>
             </div>
 
@@ -100,8 +100,8 @@ export default function Navigation() {
         </div>
       </nav>
 
-      <MobileMenu 
-        isOpen={isMobileMenuOpen} 
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
         onNavigate={handleNavigation}
       />
