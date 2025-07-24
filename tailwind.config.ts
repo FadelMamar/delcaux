@@ -6,9 +6,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
-        'lato': ['Lato', 'sans-serif'],
-        'sans': ['Lato', 'sans-serif'], // Set Lato as default sans
+        montserrat: ["Montserrat", "sans-serif"],
+        worksans: ["Work Sans", "sans-serif"],
+        sans: ["Work Sans", "sans-serif"], // Set Work Sans as default sans
       },
       borderRadius: {
         lg: "var(--radius)",

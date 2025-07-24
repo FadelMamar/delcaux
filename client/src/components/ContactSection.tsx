@@ -63,7 +63,7 @@ export default function ContactSection() {
           <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-4">
             {t('contact.title')}
           </h2>
-          <p className="text-xl font-lato text-blue-grey max-w-3xl mx-auto">
+          <p className="text-xl font-worksans text-blue-grey max-w-3xl mx-auto">
             {t('contact.subtitle')}
           </p>
         </div>

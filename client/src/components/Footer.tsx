@@ -1,5 +1,4 @@
 import { Linkedin, Twitter, Facebook } from "lucide-react";
-import logoPath from "@assets/logo_delcaux_consulting_1753365185310.jpg";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -16,9 +15,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="text-3xl font-montserrat font-bold">Delcaux</div>
-            <p className="font-lato text-blue-200 leading-relaxed">
-              Empowering West African businesses through automation and AI 
-              solutions that drive real transformation.
+            <p className="font-worksans text-blue-200 leading-relaxed">
+              Automation and AI solutions that drive real transformation.
             </p>
             <div className="flex space-x-4">
               <a
@@ -44,7 +42,9 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-montserrat font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-montserrat font-semibold mb-4">
+              Services
+            </h4>
             <ul className="space-y-2 text-blue-200">
               <li>
                 <button
@@ -156,13 +156,22 @@ export default function Footer() {
             © 2024 Delcaux. All rights reserved.
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-blue-200 hover:text-white transition-colors text-sm">
+            <a
+              href="#"
+              className="text-blue-200 hover:text-white transition-colors text-sm"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="text-blue-200 hover:text-white transition-colors text-sm">
+            <a
+              href="#"
+              className="text-blue-200 hover:text-white transition-colors text-sm"
+            >
               Terms of Service
             </a>
-            <a href="#" className="text-blue-200 hover:text-white transition-colors text-sm">
+            <a
+              href="#"
+              className="text-blue-200 hover:text-white transition-colors text-sm"
+            >
               Cookie Policy
             </a>
           </div>

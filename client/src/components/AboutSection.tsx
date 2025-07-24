@@ -19,7 +19,7 @@ export default function AboutSection() {
             <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-6">
               Pioneering Digital Transformation in West Africa
             </h2>
-            <p className="text-lg font-lato text-blue-grey mb-8 leading-relaxed">
+            <p className="text-lg font-worksans text-blue-grey mb-8 leading-relaxed">
               Founded with the vision of bridging the digital divide, Delcaux is 
               at the forefront of technological innovation in West Africa. We 
               understand the unique challenges and opportunities in our region, 
@@ -33,7 +33,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Mission</h3>
-                  <p className="font-lato text-blue-grey">
+                  <p className="font-worksans text-blue-grey">
                     Empowering African businesses through cutting-edge automation 
                     and AI solutions that drive efficiency, growth, and innovation.
                   </p>
@@ -46,7 +46,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Vision</h3>
-                  <p className="font-lato text-blue-grey">
+                  <p className="font-worksans text-blue-grey">
                     To be the leading technology partner for digital transformation 
                     across West Africa, creating sustainable value for businesses and communities.
                   </p>
@@ -59,7 +59,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Values</h3>
-                  <p className="font-lato text-blue-grey">
+                  <p className="font-worksans text-blue-grey">
                     Innovation, integrity, and impact. We believe in ethical 
                     technology that serves people and builds stronger communities.
                   </p>

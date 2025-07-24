@@ -82,7 +82,7 @@ const translations = {
     'services.ai.badge': 'Advanced AI',
 
     'services.training.title': 'Workshops & Training',
-    'services.training.description': 'Comprehensive training programs for professionals, and organizations to build AI capabilities.',
+    'services.training.description': 'Comprehensive training programs for professionals and organizations to build AI capabilities.',
     'services.training.feature1': 'Professional Training',
     'services.training.feature2': 'School Programs',
     'services.training.feature3': 'Corporate Workshops',

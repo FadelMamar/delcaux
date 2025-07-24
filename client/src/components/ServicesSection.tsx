@@ -20,7 +20,7 @@ export default function ServicesSection() {
           <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-4">
             {t('services.title')}
           </h2>
-          <p className="text-xl font-lato text-blue-grey max-w-3xl mx-auto">
+          <p className="text-xl font-worksans text-blue-grey max-w-3xl mx-auto">
             {t('services.subtitle')}
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function ServicesSection() {
               <Badge variant="secondary" className="w-fit">{t('services.automation.badge')}</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="font-lato text-blue-grey mb-6">
+              <p className="font-worksans text-blue-grey mb-6">
                 {t('services.automation.description')}
               </p>
               <ul className="text-sm text-blue-grey space-y-2">
@@ -70,7 +70,7 @@ export default function ServicesSection() {
               <Badge variant="outline" className="w-fit">{t('services.odoo.badge')}</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="font-lato text-blue-grey mb-6">
+              <p className="font-worksans text-blue-grey mb-6">
                 {t('services.odoo.description')}
               </p>
               <ul className="text-sm text-blue-grey space-y-2">
@@ -102,7 +102,7 @@ export default function ServicesSection() {
               <Badge variant="destructive" className="w-fit bg-terracotta hover:bg-terracotta/80">{t('services.ai.badge')}</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="font-lato text-blue-grey mb-6">
+              <p className="font-worksans text-blue-grey mb-6">
                 {t('services.ai.description')}
               </p>
               <ul className="text-sm text-blue-grey space-y-2">
@@ -134,7 +134,7 @@ export default function ServicesSection() {
               <Badge className="w-fit bg-warm-gold hover:bg-warm-gold/80">{t('services.training.badge')}</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="font-lato text-blue-grey mb-6">
+              <p className="font-worksans text-blue-grey mb-6">
                 {t('services.training.description')}
               </p>
               <ul className="text-sm text-blue-grey space-y-2">
