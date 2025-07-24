@@ -42,12 +42,13 @@ export default function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuPr
         </div>
         
         <div className="px-4 py-6 space-y-4">
-          <button
-            onClick={() => handleNavigate("home")}
+          <Link
+            href="/"
+            onClick={onClose}
             className="block w-full text-left py-2 text-navy-blue hover:text-blue-grey transition-colors font-medium"
           >
             {t('nav.home')}
-          </button>
+          </Link>
           <button
             onClick={() => handleNavigate("services")}
             className="block w-full text-left py-2 text-navy-blue hover:text-blue-grey transition-colors font-medium"

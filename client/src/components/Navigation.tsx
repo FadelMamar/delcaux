@@ -12,7 +12,14 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useLanguage();
 
-  const scrollToSection = (sectionId: string) => {
+  const handleNavigation = (sectionId: string) => {
+    // If we're not on the home page, navigate to home first
+    if (location !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
+    // If we're on home page, scroll to section
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -38,20 +45,20 @@ export default function Navigation() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              <button
-                onClick={() => scrollToSection("home")}
+              <Link
+                href="/"
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
                 {t('nav.home')}
-              </button>
+              </Link>
               <button
-                onClick={() => scrollToSection("services")}
+                onClick={() => handleNavigation("services")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
                 {t('nav.services')}
               </button>
               <button
-                onClick={() => scrollToSection("about")}
+                onClick={() => handleNavigation("about")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
                 {t('nav.about')}
@@ -63,7 +70,7 @@ export default function Navigation() {
                 {t('nav.caseStudies')}
               </Link>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => handleNavigation("contact")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
                 {t('nav.contact')}
@@ -73,7 +80,7 @@ export default function Navigation() {
 
             <div className="hidden md:block">
               <Button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => handleNavigation("contact")}
                 className="bg-navy-blue text-white px-6 py-2 rounded-lg font-medium hover:bg-navy-blue/90 transition-colors"
               >
                 {t('nav.freeConsultation')}
@@ -96,7 +103,7 @@ export default function Navigation() {
       <MobileMenu 
         isOpen={isMobileMenuOpen} 
         onClose={() => setIsMobileMenuOpen(false)}
-        onNavigate={scrollToSection}
+        onNavigate={handleNavigation}
       />
     </>
   );
