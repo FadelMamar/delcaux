@@ -54,13 +54,13 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 gradient-blue-green">
+    <section id="contact" className="py-20 gradient-blue-soft">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-charcoal mb-4">
+          <h2 className="text-4xl font-playfair font-bold text-navy-blue mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-blue-grey max-w-3xl mx-auto">
             Ready to transform your business? Let's discuss how we can help you 
             achieve your digital transformation goals.
           </p>
@@ -69,7 +69,7 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-2xl shadow-sm">
-            <h3 className="text-2xl font-semibold text-charcoal mb-6">
+            <h3 className="text-2xl font-semibold text-navy-blue mb-6">
               Send us a message
             </h3>
             
@@ -182,7 +182,7 @@ export default function ContactSection() {
                 <Button
                   type="submit"
                   disabled={contactMutation.isPending}
-                  className="w-full bg-ocean-blue text-white py-4 rounded-lg font-semibold hover:bg-ocean-blue/90 transition-colors text-lg"
+                  className="w-full bg-navy-blue text-white py-4 rounded-lg font-semibold hover:bg-navy-blue/90 transition-colors text-lg"
                 >
                   {contactMutation.isPending ? "Sending..." : "Send Message"}
                 </Button>
@@ -193,28 +193,28 @@ export default function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-2xl font-semibold text-charcoal mb-6">
+              <h3 className="text-2xl font-semibold text-navy-blue mb-6">
                 Contact Information
               </h3>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-ocean-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-navy-blue rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="text-white h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-medium text-charcoal">Email</div>
-                    <div className="text-gray-600">hello@delcaux.com</div>
+                    <div className="font-medium text-navy-blue">Email</div>
+                    <div className="text-blue-grey">hello@delcaux.com</div>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-forest-green rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-blue-grey rounded-lg flex items-center justify-center flex-shrink-0">
                     <SiWhatsapp className="text-white h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-medium text-charcoal">WhatsApp</div>
-                    <div className="text-gray-600">+233 XX XXX XXXX</div>
+                    <div className="font-medium text-navy-blue">WhatsApp</div>
+                    <div className="text-blue-grey">+233 XX XXX XXXX</div>
                   </div>
                 </div>
 
@@ -223,8 +223,8 @@ export default function ContactSection() {
                     <MapPin className="text-white h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-medium text-charcoal">Office</div>
-                    <div className="text-gray-600">
+                    <div className="font-medium text-navy-blue">Office</div>
+                    <div className="text-blue-grey">
                       Accra, Ghana<br />West Africa
                     </div>
                   </div>
@@ -247,7 +247,7 @@ export default function ContactSection() {
 
             {/* Social Media */}
             <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-xl font-semibold text-charcoal mb-6">Follow Us</h3>
+              <h3 className="text-xl font-semibold text-navy-blue mb-6">Follow Us</h3>
               <div className="flex space-x-4">
                 <a
                   href="#"
@@ -277,7 +277,7 @@ export default function ContactSection() {
             </div>
 
             {/* Business Hours */}
-            <div className="gradient-ocean-forest p-8 rounded-2xl text-white">
+            <div className="gradient-navy-blue p-8 rounded-2xl text-white">
               <h3 className="text-xl font-semibold mb-4 flex items-center">
                 <Clock className="mr-2 h-5 w-5" />
                 Business Hours

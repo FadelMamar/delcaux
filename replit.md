@@ -8,6 +8,19 @@ This is a full-stack web application built with React (frontend) and Express.js 
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+**Brand Color Palette Update (January 2025)**
+- Updated entire website to use the new Delcaux Consulting brand colors
+- Primary Color: Dark Navy Blue (#0B1F3A) - used for headers, navigation, buttons, and key highlights
+- Secondary Color: Graph Grey (#B0B0B0) - used for icons and accents
+- Accent Color: Blue-Grey (#7A8CA3) - used for hover effects and secondary text
+- Optional Accents: Warm Gold (#D4AF37) and Terracotta (#E2725B) - used for CTA highlights and cultural elements
+- Background: Clean White (#FFFFFF) for optimal readability
+- Applied consistent color scheme across all components: Navigation, Hero, Services, About, Contact, Footer
+- Maintained proper contrast ratios for accessibility
+- Enhanced professional, tech-focused West African aesthetic
+
 ## System Architecture
 
 The application follows a monorepo structure with a clear separation between client and server code:

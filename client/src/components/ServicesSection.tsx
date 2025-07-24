@@ -13,10 +13,10 @@ export default function ServicesSection() {
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-charcoal mb-4">
+          <h2 className="text-4xl font-playfair font-bold text-navy-blue mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-blue-grey max-w-3xl mx-auto">
             Comprehensive digital transformation solutions designed specifically 
             for West African businesses and organizations.
           </p>
@@ -25,55 +25,55 @@ export default function ServicesSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Service 1: Business Process Automation */}
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-ocean-blue rounded-xl flex items-center justify-center mb-6">
+            <div className="w-16 h-16 bg-navy-blue rounded-xl flex items-center justify-center mb-6">
               <Settings className="text-white h-8 w-8" />
             </div>
-            <h3 className="text-xl font-semibold text-charcoal mb-4">
+            <h3 className="text-xl font-semibold text-navy-blue mb-4">
               Business Process Automation
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-blue-grey mb-6">
               Streamline workflows, digitize data systems, and eliminate manual 
               processes to boost efficiency and reduce costs.
             </p>
-            <ul className="text-sm text-gray-600 space-y-2">
+            <ul className="text-sm text-blue-grey space-y-2">
               <li className="flex items-center">
-                <Check className="text-ocean-blue mr-2 h-4 w-4" />
+                <Check className="text-navy-blue mr-2 h-4 w-4" />
                 Digital Workflows
               </li>
               <li className="flex items-center">
-                <Check className="text-ocean-blue mr-2 h-4 w-4" />
+                <Check className="text-navy-blue mr-2 h-4 w-4" />
                 Data Systems
               </li>
               <li className="flex items-center">
-                <Check className="text-ocean-blue mr-2 h-4 w-4" />
+                <Check className="text-navy-blue mr-2 h-4 w-4" />
                 Process Optimization
               </li>
             </ul>
           </div>
 
           {/* Service 2: Odoo ERP Integration */}
-          <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-forest-green rounded-xl flex items-center justify-center mb-6">
+          <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+            <div className="w-16 h-16 bg-blue-grey rounded-xl flex items-center justify-center mb-6">
               <Database className="text-white h-8 w-8" />
             </div>
-            <h3 className="text-xl font-semibold text-charcoal mb-4">
+            <h3 className="text-xl font-semibold text-navy-blue mb-4">
               Odoo ERP Integration
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-blue-grey mb-6">
               Complete enterprise resource planning solutions covering inventory, 
               HR, finance, and customer relationship management.
             </p>
-            <ul className="text-sm text-gray-600 space-y-2">
+            <ul className="text-sm text-blue-grey space-y-2">
               <li className="flex items-center">
-                <Check className="text-forest-green mr-2 h-4 w-4" />
+                <Check className="text-blue-grey mr-2 h-4 w-4" />
                 Inventory Management
               </li>
               <li className="flex items-center">
-                <Check className="text-forest-green mr-2 h-4 w-4" />
+                <Check className="text-blue-grey mr-2 h-4 w-4" />
                 HR & Finance
               </li>
               <li className="flex items-center">
-                <Check className="text-forest-green mr-2 h-4 w-4" />
+                <Check className="text-blue-grey mr-2 h-4 w-4" />
                 CRM Integration
               </li>
             </ul>
@@ -84,14 +84,14 @@ export default function ServicesSection() {
             <div className="w-16 h-16 bg-terracotta rounded-xl flex items-center justify-center mb-6">
               <Brain className="text-white h-8 w-8" />
             </div>
-            <h3 className="text-xl font-semibold text-charcoal mb-4">
+            <h3 className="text-xl font-semibold text-navy-blue mb-4">
               AI Solutions
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-blue-grey mb-6">
               Custom artificial intelligence applications including medical image 
               analysis, predictive analytics, and intelligent chatbots.
             </p>
-            <ul className="text-sm text-gray-600 space-y-2">
+            <ul className="text-sm text-blue-grey space-y-2">
               <li className="flex items-center">
                 <Check className="text-terracotta mr-2 h-4 w-4" />
                 Medical AI Diagnostics
@@ -112,14 +112,14 @@ export default function ServicesSection() {
             <div className="w-16 h-16 bg-warm-gold rounded-xl flex items-center justify-center mb-6">
               <GraduationCap className="text-white h-8 w-8" />
             </div>
-            <h3 className="text-xl font-semibold text-charcoal mb-4">
+            <h3 className="text-xl font-semibold text-navy-blue mb-4">
               AI Workshops & Training
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-blue-grey mb-6">
               Comprehensive training programs for professionals, educational 
               institutions, and organizations to build AI capabilities.
             </p>
-            <ul className="text-sm text-gray-600 space-y-2">
+            <ul className="text-sm text-blue-grey space-y-2">
               <li className="flex items-center">
                 <Check className="text-warm-gold mr-2 h-4 w-4" />
                 Professional Training
@@ -137,7 +137,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Featured Service Highlight */}
-        <div className="mt-16 gradient-ocean-forest rounded-3xl p-8 lg:p-12 text-white">
+        <div className="mt-16 gradient-navy-blue rounded-3xl p-8 lg:p-12 text-white">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-playfair font-bold mb-4">
@@ -150,7 +150,7 @@ export default function ServicesSection() {
               </p>
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-white text-ocean-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                className="bg-white text-navy-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Learn About Medical AI
               </Button>

@@ -23,8 +23,8 @@ export default function Navigation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-3">
-              <Logo className="w-8 h-8 text-ocean-blue" />
-              <span className="text-2xl font-playfair font-bold text-ocean-blue">
+              <Logo className="w-8 h-8 text-navy-blue" />
+              <span className="text-2xl font-playfair font-bold text-navy-blue">
                 Delcaux
               </span>
             </Link>
@@ -33,25 +33,25 @@ export default function Navigation() {
             <div className="hidden md:flex space-x-8">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-charcoal hover:text-ocean-blue transition-colors font-medium"
+                className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-charcoal hover:text-ocean-blue transition-colors font-medium"
+                className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-charcoal hover:text-ocean-blue transition-colors font-medium"
+                className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-charcoal hover:text-ocean-blue transition-colors font-medium"
+                className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
                 Contact
               </button>
@@ -60,7 +60,7 @@ export default function Navigation() {
             <div className="hidden md:block">
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-ocean-blue text-white px-6 py-2 rounded-lg font-medium hover:bg-ocean-blue/90 transition-colors"
+                className="bg-navy-blue text-white px-6 py-2 rounded-lg font-medium hover:bg-navy-blue/90 transition-colors"
               >
                 Free Consultation
               </Button>
@@ -70,7 +70,7 @@ export default function Navigation() {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden text-charcoal"
+              className="md:hidden text-navy-blue"
               onClick={() => setIsMobileMenuOpen(true)}
             >
               <Menu className="h-6 w-6" />

@@ -1,35 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(0, 0%, 20%);
+  --foreground: hsl(210, 82%, 15%);
   --muted: hsl(210, 40%, 98%);
   --muted-foreground: hsl(215, 13%, 65%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 82%, 15%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 82%, 15%);
   --border: hsl(214, 32%, 91%);
   --input: hsl(214, 32%, 91%);
-  --primary: hsl(207, 90%, 54%);
-  --primary-foreground: hsl(211, 100%, 99%);
-  --secondary: hsl(210, 40%, 98%);
-  --secondary-foreground: hsl(222, 84%, 5%);
-  --accent: hsl(210, 40%, 98%);
-  --accent-foreground: hsl(222, 84%, 5%);
+  --primary: hsl(210, 82%, 15%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 69%);
+  --secondary-foreground: hsl(210, 82%, 15%);
+  --accent: hsl(208, 19%, 56%);
+  --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(222, 84%, 5%);
+  --ring: hsl(210, 82%, 15%);
   --radius: 0.5rem;
   
-  /* Custom Delcaux Colors */
-  --ocean-blue: hsl(219, 79%, 39%);
-  --forest-green: hsl(152, 69%, 19%);
-  --warm-gold: hsl(38, 92%, 50%);
-  --terracotta: hsl(24, 85%, 53%);
-  --charcoal: hsl(215, 25%, 27%);
+  /* Delcaux Brand Colors */
+  --navy-blue: hsl(210, 82%, 15%);        /* #0B1F3A */
+  --graph-grey: hsl(0, 0%, 69%);          /* #B0B0B0 */
+  --blue-grey: hsl(208, 19%, 56%);        /* #7A8CA3 */
+  --warm-gold: hsl(48, 75%, 53%);         /* #D4AF37 */
+  --terracotta: hsl(11, 73%, 61%);        /* #E2725B */
+  --pure-white: hsl(0, 0%, 100%);         /* #FFFFFF */
 }
 
 .dark {
@@ -69,65 +72,74 @@
 }
 
 @layer utilities {
-  .text-ocean-blue {
-    color: hsl(219, 79%, 39%);
+  .text-navy-blue {
+    color: hsl(210, 82%, 15%);
   }
   
-  .text-forest-green {
-    color: hsl(152, 69%, 19%);
+  .text-graph-grey {
+    color: hsl(0, 0%, 69%);
+  }
+  
+  .text-blue-grey {
+    color: hsl(208, 19%, 56%);
   }
   
   .text-warm-gold {
-    color: hsl(38, 92%, 50%);
+    color: hsl(48, 75%, 53%);
   }
   
   .text-terracotta {
-    color: hsl(24, 85%, 53%);
+    color: hsl(11, 73%, 61%);
   }
   
-  .text-charcoal {
-    color: hsl(215, 25%, 27%);
+  .bg-navy-blue {
+    background-color: hsl(210, 82%, 15%);
   }
   
-  .bg-ocean-blue {
-    background-color: hsl(219, 79%, 39%);
+  .bg-graph-grey {
+    background-color: hsl(0, 0%, 69%);
   }
   
-  .bg-forest-green {
-    background-color: hsl(152, 69%, 19%);
+  .bg-blue-grey {
+    background-color: hsl(208, 19%, 56%);
   }
   
   .bg-warm-gold {
-    background-color: hsl(38, 92%, 50%);
+    background-color: hsl(48, 75%, 53%);
   }
   
   .bg-terracotta {
-    background-color: hsl(24, 85%, 53%);
+    background-color: hsl(11, 73%, 61%);
   }
   
-  .bg-charcoal {
-    background-color: hsl(215, 25%, 27%);
+  .hover\:bg-navy-blue:hover {
+    background-color: hsl(210, 82%, 12%);
   }
   
-  .hover\:bg-ocean-blue:hover {
-    background-color: hsl(219, 79%, 35%);
+  .hover\:bg-blue-grey:hover {
+    background-color: hsl(208, 19%, 50%);
   }
   
-  .hover\:bg-forest-green:hover {
-    background-color: hsl(152, 69%, 15%);
+  .hover\:bg-warm-gold:hover {
+    background-color: hsl(48, 75%, 47%);
   }
   
-  .gradient-ocean-forest {
-    background: linear-gradient(135deg, hsl(219, 79%, 39%), hsl(152, 69%, 19%));
+  .hover\:bg-terracotta:hover {
+    background-color: hsl(11, 73%, 55%);
   }
   
-  .gradient-blue-green {
-    background: linear-gradient(135deg, hsl(219, 20%, 97%), hsl(152, 20%, 97%));
+  .gradient-navy-blue {
+    background: linear-gradient(135deg, hsl(210, 82%, 15%), hsl(208, 19%, 56%));
+  }
+  
+  .gradient-blue-soft {
+    background: linear-gradient(135deg, hsl(210, 40%, 98%), hsl(208, 20%, 96%));
+  }
+  
+  .gradient-mesh {
+    background: linear-gradient(135deg, hsl(210, 82%, 15%) 0%, hsl(208, 19%, 56%) 50%, hsl(210, 82%, 20%) 100%);
   }
 }
-
-/* Custom font imports */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 .font-playfair {
   font-family: 'Playfair Display', serif;

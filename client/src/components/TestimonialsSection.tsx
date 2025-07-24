@@ -26,10 +26,10 @@ export default function TestimonialsSection() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-charcoal mb-4">
+          <h2 className="text-4xl font-playfair font-bold text-navy-blue mb-4">
             Client Success Stories
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-blue-grey">
             See how we've transformed businesses across West Africa
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-6 italic">
+              <p className="text-blue-grey mb-6 italic">
                 "{testimonial.quote}"
               </p>
               <div className="flex items-center">
@@ -54,10 +54,10 @@ export default function TestimonialsSection() {
                   className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
-                  <div className="font-semibold text-charcoal">
+                  <div className="font-semibold text-navy-blue">
                     {testimonial.name}
                   </div>
-                  <div className="text-sm text-gray-600">
+                  <div className="text-sm text-blue-grey">
                     {testimonial.title}
                   </div>
                 </div>

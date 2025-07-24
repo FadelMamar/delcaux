@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-charcoal text-white py-16">
+    <footer className="bg-navy-blue text-white py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -19,26 +19,26 @@ export default function Footer() {
               <Logo className="w-8 h-8 text-white" />
               <div className="text-3xl font-playfair font-bold">Delcaux</div>
             </div>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-blue-200 leading-relaxed">
               Empowering West African businesses through automation and AI 
               solutions that drive real transformation.
             </p>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-blue-200 hover:text-white transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-blue-200 hover:text-white transition-colors"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-blue-200 hover:text-white transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
@@ -48,7 +48,7 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-blue-200">
               <li>
                 <button
                   onClick={() => scrollToSection("services")}
@@ -87,7 +87,7 @@ export default function Footer() {
           {/* Company */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-blue-200">
               <li>
                 <button
                   onClick={() => scrollToSection("about")}
@@ -126,7 +126,7 @@ export default function Footer() {
           {/* Resources */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-blue-200">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Blog
@@ -154,18 +154,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-400 text-sm">
+        <div className="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="text-blue-200 text-sm">
             © 2024 Delcaux. All rights reserved.
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
+            <a href="#" className="text-blue-200 hover:text-white transition-colors text-sm">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
+            <a href="#" className="text-blue-200 hover:text-white transition-colors text-sm">
               Terms of Service
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
+            <a href="#" className="text-blue-200 hover:text-white transition-colors text-sm">
               Cookie Policy
             </a>
           </div>
