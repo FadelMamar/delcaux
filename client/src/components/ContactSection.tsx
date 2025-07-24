@@ -12,6 +12,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { Mail, MessageSquare, MapPin, Clock, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ContactSection() {
   const { toast } = useToast();
@@ -68,10 +69,13 @@ export default function ContactSection() {
 
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm">
-            <h3 className="text-2xl font-semibold text-navy-blue mb-6">
-              Send us a message
-            </h3>
+          <Card className="p-8 border-0 shadow-sm">
+            <CardHeader className="p-0 pb-6">
+              <CardTitle className="text-2xl text-navy-blue">
+                Send us a message
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="p-0">
             
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -188,7 +192,8 @@ export default function ContactSection() {
                 </Button>
               </form>
             </Form>
-          </div>
+            </CardContent>
+          </Card>
 
           {/* Contact Information */}
           <div className="space-y-8">

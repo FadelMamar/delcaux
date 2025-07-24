@@ -10,6 +10,13 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+**Enhanced UI with shadcn/ui Components (January 2025)**
+- Upgraded Services section to use authentic shadcn/ui Card components (Card, CardHeader, CardTitle, CardContent)
+- Added Badge components to service cards for better categorization (Core Service, Enterprise, Advanced AI, Training)
+- Enhanced Contact form with proper shadcn/ui Card structure while maintaining existing Form functionality
+- Improved component consistency and maintainability following shadcn/ui design patterns
+- Maintained all existing functionality while upgrading to more professional UI components
+
 **Logo Integration & Color Refinements (January 2025)**
 - Integrated official Delcaux Consulting logo across all components (Navigation, Footer, Mobile Menu)
 - Replaced previous SVG logo with authentic brand logo for consistent identity
