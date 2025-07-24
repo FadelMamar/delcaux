@@ -1,5 +1,5 @@
 import { Linkedin, Twitter, Facebook } from "lucide-react";
-import logoPath from "@assets/logo_delcaux_consulting_1753364800001.jpg";
+import logoPath from "@assets/logo_delcaux_consulting_1753365185310.jpg";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {

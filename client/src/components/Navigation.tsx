@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import MobileMenu from "./MobileMenu";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
-import logoPath from "@assets/logo_delcaux_consulting_1753364800001.jpg";
+import logoPath from "@assets/logo_delcaux_consulting_1753365185310.jpg";
 
 export default function Navigation() {
   const [location] = useLocation();

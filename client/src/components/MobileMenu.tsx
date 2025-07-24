@@ -1,6 +1,6 @@
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoPath from "@assets/logo_delcaux_consulting_1753364800001.jpg";
+import logoPath from "@assets/logo_delcaux_consulting_1753365185310.jpg";
 
 interface MobileMenuProps {
   isOpen: boolean;
