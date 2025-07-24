@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { apiRequest } from "@/lib/queryClient";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,6 +17,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ContactSection() {
   const { toast } = useToast();
+  const { t } = useLanguage();
   
   const form = useForm<InsertContact>({
     resolver: zodResolver(insertContactSchema),
@@ -36,15 +38,15 @@ export default function ContactSection() {
     },
     onSuccess: () => {
       toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours.",
+        title: t('toast.success.title'),
+        description: t('toast.success.description'),
       });
       form.reset();
     },
     onError: (error) => {
       toast({
-        title: "Error sending message",
-        description: "Please try again or contact us directly via WhatsApp.",
+        title: t('toast.error.title'),
+        description: t('toast.error.description'),
         variant: "destructive",
       });
     },
@@ -59,11 +61,10 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-4">
-            Get In Touch
+            {t('contact.title')}
           </h2>
           <p className="text-xl font-lato text-blue-grey max-w-3xl mx-auto">
-            Ready to transform your business? Let's discuss how we can help you 
-            achieve your digital transformation goals.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -72,7 +73,7 @@ export default function ContactSection() {
           <Card className="p-8 border-0 shadow-sm">
             <CardHeader className="p-0 pb-6">
               <CardTitle className="text-2xl font-montserrat font-semibold text-navy-blue">
-                Send us a message
+                {t('contact.form.title')}
               </CardTitle>
             </CardHeader>
             <CardContent className="p-0">
@@ -85,9 +86,9 @@ export default function ContactSection() {
                     name="firstName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>First Name *</FormLabel>
+                        <FormLabel>{t('contact.form.firstName')} *</FormLabel>
                         <FormControl>
-                          <Input placeholder="John" {...field} />
+                          <Input placeholder={t('contact.form.placeholder.firstName')} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -98,9 +99,9 @@ export default function ContactSection() {
                     name="lastName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Last Name *</FormLabel>
+                        <FormLabel>{t('contact.form.lastName')} *</FormLabel>
                         <FormControl>
-                          <Input placeholder="Doe" {...field} />
+                          <Input placeholder={t('contact.form.placeholder.lastName')} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -113,11 +114,11 @@ export default function ContactSection() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email Address *</FormLabel>
+                      <FormLabel>{t('contact.form.email')} *</FormLabel>
                       <FormControl>
                         <Input 
                           type="email" 
-                          placeholder="john.doe@company.com" 
+                          placeholder={t('contact.form.placeholder.email')} 
                           {...field} 
                         />
                       </FormControl>
@@ -131,9 +132,9 @@ export default function ContactSection() {
                   name="company"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Company/Organization</FormLabel>
+                      <FormLabel>{t('contact.form.company')}</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your Company Name" {...field} />
+                        <Input placeholder={t('contact.form.placeholder.company')} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -145,19 +146,19 @@ export default function ContactSection() {
                   name="service"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Service Interest</FormLabel>
+                      <FormLabel>{t('contact.form.service')}</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Select a service..." />
+                            <SelectValue placeholder={t('contact.form.placeholder.service')} />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="business-automation">Business Process Automation</SelectItem>
-                          <SelectItem value="odoo-erp">Odoo ERP Integration</SelectItem>
-                          <SelectItem value="ai-solutions">AI Solutions</SelectItem>
-                          <SelectItem value="ai-workshops">AI Workshops & Training</SelectItem>
-                          <SelectItem value="consultation">General Consultation</SelectItem>
+                          <SelectItem value="business-automation">{t('contact.form.services.automation')}</SelectItem>
+                          <SelectItem value="odoo-erp">{t('contact.form.services.odoo')}</SelectItem>
+                          <SelectItem value="ai-solutions">{t('contact.form.services.ai')}</SelectItem>
+                          <SelectItem value="ai-workshops">{t('contact.form.services.training')}</SelectItem>
+                          <SelectItem value="consultation">{t('contact.form.services.consultation')}</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -170,11 +171,11 @@ export default function ContactSection() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message *</FormLabel>
+                      <FormLabel>{t('contact.form.message')} *</FormLabel>
                       <FormControl>
                         <Textarea 
                           rows={5}
-                          placeholder="Tell us about your project and how we can help..." 
+                          placeholder={t('contact.form.placeholder.message')} 
                           {...field} 
                         />
                       </FormControl>
@@ -188,7 +189,7 @@ export default function ContactSection() {
                   disabled={contactMutation.isPending}
                   className="w-full bg-navy-blue text-white py-4 rounded-lg font-semibold hover:bg-navy-blue/90 transition-colors text-lg"
                 >
-                  {contactMutation.isPending ? "Sending..." : "Send Message"}
+                  {contactMutation.isPending ? t('contact.form.sending') : t('contact.form.submit')}
                 </Button>
               </form>
             </Form>
@@ -199,7 +200,7 @@ export default function ContactSection() {
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-2xl shadow-sm">
               <h3 className="text-2xl font-semibold text-navy-blue mb-6">
-                Contact Information
+                {t('contact.info.title')}
               </h3>
 
               <div className="space-y-6">

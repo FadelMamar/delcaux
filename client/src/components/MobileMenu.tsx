@@ -1,5 +1,7 @@
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSelector from "./LanguageSelector";
 import logoPath from "@assets/logo_delcaux_consulting_1753365185310.jpg";
 
 interface MobileMenuProps {

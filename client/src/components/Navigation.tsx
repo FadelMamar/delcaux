@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import MobileMenu from "./MobileMenu";
+import LanguageSelector from "./LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import logoPath from "@assets/logo_delcaux_consulting_1753365185310.jpg";
@@ -8,6 +10,7 @@ import logoPath from "@assets/logo_delcaux_consulting_1753365185310.jpg";
 export default function Navigation() {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -29,36 +32,37 @@ export default function Navigation() {
                 className="w-16 h-16 object-contain" 
               />
               <span className="text-2xl font-montserrat font-bold text-navy-blue">
-                Delcaux
+                {t('nav.delcaux')}
               </span>
             </Link>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("home")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                Home
+                {t('nav.home')}
               </button>
               <button
                 onClick={() => scrollToSection("services")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                Services
+                {t('nav.services')}
               </button>
               <button
                 onClick={() => scrollToSection("about")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                About
+                {t('nav.about')}
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
                 className="text-navy-blue hover:text-blue-grey transition-colors font-medium"
               >
-                Contact
+                {t('nav.contact')}
               </button>
+              <LanguageSelector />
             </div>
 
             <div className="hidden md:block">
@@ -66,7 +70,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection("contact")}
                 className="bg-navy-blue text-white px-6 py-2 rounded-lg font-medium hover:bg-navy-blue/90 transition-colors"
               >
-                Free Consultation
+                {t('nav.freeConsultation')}
               </Button>
             </div>
 
