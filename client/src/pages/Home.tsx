@@ -17,7 +17,7 @@ export default function Home() {
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-      }, 100);
+      }, 200);
     }
   }, []);
 

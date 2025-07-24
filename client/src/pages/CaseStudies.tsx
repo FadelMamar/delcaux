@@ -79,11 +79,11 @@ export default function CaseStudies() {
       <Navigation />
 
       {/* Header */}
-      <div className="bg-gradient-mesh text-white py-20 pt-32">
+      <div className="bg-gradient-mesh text-navy-blue py-20 pt-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors"
+            className="inline-flex items-center text-navy-blue/80 hover:text-navy-blue mb-8 transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to {t("nav.home")}
@@ -91,7 +91,7 @@ export default function CaseStudies() {
           <h1 className="text-5xl font-montserrat font-bold mb-6">
             {t("caseStudies.title")}
           </h1>
-          <p className="text-xl font-worksans text-white/90 max-w-3xl">
+          <p className="text-xl font-worksans text-navy-blue/90 max-w-3xl">
             {t("caseStudies.subtitle")}
           </p>
         </div>
@@ -185,7 +185,7 @@ export default function CaseStudies() {
           </Link>
         </div>
       </div>
-      
+
       {/* Footer */}
       <Footer />
     </div>
