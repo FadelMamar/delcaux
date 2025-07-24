@@ -23,7 +23,7 @@ export default function Navigation() {
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-3">
               <img 
-                src="/attached_assets/logo_DelcauxConsulting (2)_1753364072296.jpg" 
+                src="/attached_assets/logo_delcaux_consulting_1753364800001.jpg" 
                 alt="Delcaux Consulting Logo" 
                 className="w-10 h-10 object-contain" 
               />

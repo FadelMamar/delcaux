@@ -10,6 +10,12 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+**Updated Brand Logo (January 2025)**
+- Integrated new authentic Delcaux Consulting logo across all components (Navigation, Footer, Mobile Menu)
+- Updated logo references from logo_DelcauxConsulting (2)_1753364072296.jpg to logo_delcaux_consulting_1753364800001.jpg
+- Maintained consistent logo sizing and positioning throughout the website
+- Enhanced brand identity with the official logo design
+
 **Content Optimization for New Business (January 2025)**
 - Removed Client Success Stories (testimonials) section as requested for new business seeking first clients
 - Removed Medical AI featured section and references to focus on core automation and AI services
