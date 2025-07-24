@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+import hero_image_1 from "@assets/hero-image-1.jpg";
+
 export default function HeroSection() {
   const { t } = useLanguage();
   const scrollToSection = (sectionId: string) => {
@@ -51,7 +53,7 @@ export default function HeroSection() {
 
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600"
+              src={hero_image_1}
               alt="Modern office workspace in West Africa"
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
