@@ -21,9 +21,9 @@ export default function Footer() {
                 alt="Delcaux Consulting Logo" 
                 className="w-10 h-10 object-contain" 
               />
-              <div className="text-3xl font-playfair font-bold">Delcaux</div>
+              <div className="text-3xl font-montserrat font-bold">Delcaux</div>
             </div>
-            <p className="text-blue-200 leading-relaxed">
+            <p className="font-lato text-blue-200 leading-relaxed">
               Empowering West African businesses through automation and AI 
               solutions that drive real transformation.
             </p>
@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-montserrat font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-blue-200">
               <li>
                 <button

@@ -14,10 +14,10 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-playfair font-bold text-navy-blue mb-6">
+            <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-6">
               Pioneering Digital Transformation in West Africa
             </h2>
-            <p className="text-lg text-blue-grey mb-8 leading-relaxed">
+            <p className="text-lg font-lato text-blue-grey mb-8 leading-relaxed">
               Founded with the vision of bridging the digital divide, Delcaux is 
               at the forefront of technological innovation in West Africa. We 
               understand the unique challenges and opportunities in our region, 
@@ -30,8 +30,8 @@ export default function AboutSection() {
                   <Target className="text-white h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-navy-blue mb-2">Our Mission</h3>
-                  <p className="text-blue-grey">
+                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Mission</h3>
+                  <p className="font-lato text-blue-grey">
                     Empowering African businesses through cutting-edge automation 
                     and AI solutions that drive efficiency, growth, and innovation.
                   </p>
@@ -43,8 +43,8 @@ export default function AboutSection() {
                   <Eye className="text-white h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-navy-blue mb-2">Our Vision</h3>
-                  <p className="text-blue-grey">
+                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Vision</h3>
+                  <p className="font-lato text-blue-grey">
                     To be the leading technology partner for digital transformation 
                     across West Africa, creating sustainable value for businesses and communities.
                   </p>
@@ -56,8 +56,8 @@ export default function AboutSection() {
                   <Heart className="text-white h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-navy-blue mb-2">Our Values</h3>
-                  <p className="text-blue-grey">
+                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Values</h3>
+                  <p className="font-lato text-blue-grey">
                     Innovation, integrity, and impact. We believe in ethical 
                     technology that serves people and builds stronger communities.
                   </p>

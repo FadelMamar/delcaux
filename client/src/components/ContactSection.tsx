@@ -58,10 +58,10 @@ export default function ContactSection() {
     <section id="contact" className="py-20 gradient-blue-soft">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-navy-blue mb-4">
+          <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-blue-grey max-w-3xl mx-auto">
+          <p className="text-xl font-lato text-blue-grey max-w-3xl mx-auto">
             Ready to transform your business? Let's discuss how we can help you 
             achieve your digital transformation goals.
           </p>
@@ -71,7 +71,7 @@ export default function ContactSection() {
           {/* Contact Form */}
           <Card className="p-8 border-0 shadow-sm">
             <CardHeader className="p-0 pb-6">
-              <CardTitle className="text-2xl text-navy-blue">
+              <CardTitle className="text-2xl font-montserrat font-semibold text-navy-blue">
                 Send us a message
               </CardTitle>
             </CardHeader>

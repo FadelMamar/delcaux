@@ -28,7 +28,7 @@ export default function Navigation() {
                 alt="Delcaux Consulting Logo" 
                 className="w-16 h-16 object-contain" 
               />
-              <span className="text-2xl font-playfair font-bold text-navy-blue">
+              <span className="text-2xl font-montserrat font-bold text-navy-blue">
                 Delcaux
               </span>
             </Link>

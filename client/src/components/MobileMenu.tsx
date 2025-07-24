@@ -27,7 +27,7 @@ export default function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuPr
               alt="Delcaux Consulting Logo" 
               className="w-8 h-8 object-contain" 
             />
-            <span className="text-xl font-playfair font-bold text-navy-blue">
+            <span className="text-xl font-montserrat font-bold text-navy-blue">
               Delcaux
             </span>
           </div>

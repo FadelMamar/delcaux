@@ -10,6 +10,14 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+**Applied Professional Font Pairing (January 2025)**
+- Implemented Montserrat font (weight: 600-700) for all headings across the website
+- Applied Lato font (weight: 400) for all body text and content
+- Updated Google Fonts import to include Montserrat and Lato fonts
+- Configured Tailwind CSS with custom font families (font-montserrat, font-lato)
+- Set Lato as the default sans-serif font for consistent body text
+- Enhanced typography hierarchy and readability throughout all components
+
 **Updated Brand Logo (January 2025)**
 - Integrated latest Delcaux Consulting logo across all components (Navigation, Footer, Mobile Menu)
 - Updated logo references to logo_delcaux_consulting_1753365185310.jpg with proper @assets import method

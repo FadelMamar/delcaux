@@ -14,12 +14,12 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold text-navy-blue leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-montserrat font-bold text-navy-blue leading-tight">
                 Empowering West African businesses through{" "}
                 <span className="text-blue-grey">automation</span> and{" "}
                 <span className="text-navy-blue">AI</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl font-lato text-gray-600 leading-relaxed">
                 Transform your operations with cutting-edge technology solutions 
                 tailored for the African market. From business automation to 
                 AI-powered medical diagnostics.
@@ -44,16 +44,16 @@ export default function HeroSection() {
 
             <div className="flex items-center space-x-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-navy-blue">50+</div>
-                <div className="text-sm text-blue-grey">Clients Served</div>
+                <div className="text-3xl font-montserrat font-bold text-navy-blue">50+</div>
+                <div className="text-sm font-lato text-blue-grey">Clients Served</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-grey">100+</div>
-                <div className="text-sm text-blue-grey">Projects Completed</div>
+                <div className="text-3xl font-montserrat font-bold text-blue-grey">100+</div>
+                <div className="text-sm font-lato text-blue-grey">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-warm-gold">8</div>
-                <div className="text-sm text-blue-grey">Countries</div>
+                <div className="text-3xl font-montserrat font-bold text-warm-gold">8</div>
+                <div className="text-sm font-lato text-blue-grey">Countries</div>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function HeroSection() {
             <div className="absolute -top-4 -left-4 bg-white p-4 rounded-xl shadow-lg">
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium">AI Processing</span>
+                <span className="text-sm font-lato font-medium">AI Processing</span>
               </div>
             </div>
 

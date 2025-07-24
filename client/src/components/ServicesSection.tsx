@@ -15,10 +15,10 @@ export default function ServicesSection() {
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-playfair font-bold text-navy-blue mb-4">
+          <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-blue-grey max-w-3xl mx-auto">
+          <p className="text-xl font-lato text-blue-grey max-w-3xl mx-auto">
             Comprehensive digital transformation solutions designed specifically 
             for West African businesses and organizations.
           </p>
@@ -31,13 +31,13 @@ export default function ServicesSection() {
               <div className="w-16 h-16 bg-navy-blue rounded-xl flex items-center justify-center mb-4">
                 <Settings className="text-white h-8 w-8" />
               </div>
-              <CardTitle className="text-xl text-navy-blue">
+              <CardTitle className="text-xl font-montserrat font-semibold text-navy-blue">
                 Business Process Automation
               </CardTitle>
               <Badge variant="secondary" className="w-fit">Core Service</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="text-blue-grey mb-6">
+              <p className="font-lato text-blue-grey mb-6">
                 Streamline workflows, digitize data systems, and eliminate manual 
                 processes to boost efficiency and reduce costs.
               </p>
@@ -64,13 +64,13 @@ export default function ServicesSection() {
               <div className="w-16 h-16 bg-blue-grey rounded-xl flex items-center justify-center mb-4">
                 <Database className="text-white h-8 w-8" />
               </div>
-              <CardTitle className="text-xl text-navy-blue">
+              <CardTitle className="text-xl font-montserrat font-semibold text-navy-blue">
                 Odoo ERP Integration
               </CardTitle>
               <Badge variant="outline" className="w-fit">Enterprise</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="text-blue-grey mb-6">
+              <p className="font-lato text-blue-grey mb-6">
                 Complete enterprise resource planning solutions covering inventory, 
                 HR, finance, and customer relationship management.
               </p>
@@ -97,13 +97,13 @@ export default function ServicesSection() {
               <div className="w-16 h-16 bg-terracotta rounded-xl flex items-center justify-center mb-4">
                 <Brain className="text-white h-8 w-8" />
               </div>
-              <CardTitle className="text-xl text-navy-blue">
+              <CardTitle className="text-xl font-montserrat font-semibold text-navy-blue">
                 AI Solutions
               </CardTitle>
               <Badge variant="destructive" className="w-fit bg-terracotta hover:bg-terracotta/80">Advanced AI</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="text-blue-grey mb-6">
+              <p className="font-lato text-blue-grey mb-6">
                 Custom artificial intelligence applications including predictive 
                 analytics, intelligent chatbots, and automated decision-making systems.
               </p>
@@ -130,13 +130,13 @@ export default function ServicesSection() {
               <div className="w-16 h-16 bg-warm-gold rounded-xl flex items-center justify-center mb-4">
                 <GraduationCap className="text-white h-8 w-8" />
               </div>
-              <CardTitle className="text-xl text-navy-blue">
+              <CardTitle className="text-xl font-montserrat font-semibold text-navy-blue">
                 AI Workshops & Training
               </CardTitle>
               <Badge className="w-fit bg-warm-gold hover:bg-warm-gold/80">Training</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="text-blue-grey mb-6">
+              <p className="font-lato text-blue-grey mb-6">
                 Comprehensive training programs for professionals, educational 
                 institutions, and organizations to build AI capabilities.
               </p>
