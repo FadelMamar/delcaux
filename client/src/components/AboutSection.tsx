@@ -1,9 +1,11 @@
 import { Target, Eye, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 import hero_image_2 from "@assets/hero-image-2.jpg";
 
 export default function AboutSection() {
+  const { t } = useLanguage();
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -17,13 +19,10 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-6">
-              Pioneering Digital Transformation in West Africa
+              {t('about.title')}
             </h2>
             <p className="text-lg font-worksans text-blue-grey mb-8 leading-relaxed">
-              Founded with the vision of bridging the digital divide, Delcaux is 
-              at the forefront of technological innovation in West Africa. We 
-              understand the unique challenges and opportunities in our region, 
-              and we're committed to delivering solutions that drive real business impact.
+              {t('about.description')}
             </p>
 
             <div className="space-y-6">
@@ -32,10 +31,11 @@ export default function AboutSection() {
                   <Target className="text-white h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Mission</h3>
+                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">
+                    {t('about.mission.title')}
+                  </h3>
                   <p className="font-worksans text-blue-grey">
-                    Empowering African businesses through cutting-edge automation 
-                    and AI solutions that drive efficiency, growth, and innovation.
+                    {t('about.mission.description')}
                   </p>
                 </div>
               </div>
@@ -45,10 +45,11 @@ export default function AboutSection() {
                   <Eye className="text-white h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Vision</h3>
+                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">
+                    {t('about.vision.title')}
+                  </h3>
                   <p className="font-worksans text-blue-grey">
-                    To be the leading technology partner for digital transformation 
-                    across West Africa, creating sustainable value for businesses and communities.
+                    {t('about.vision.description')}
                   </p>
                 </div>
               </div>
@@ -58,48 +59,54 @@ export default function AboutSection() {
                   <Heart className="text-white h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">Our Values</h3>
+                  <h3 className="font-montserrat font-semibold text-navy-blue mb-2">
+                    {t('about.values.title')}
+                  </h3>
                   <p className="font-worksans text-blue-grey">
-                    Innovation, integrity, and impact. We believe in ethical 
-                    technology that serves people and builds stronger communities.
+                    {t('about.values.description')}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <div className="mt-10">
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-navy-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-navy-blue/90 transition-colors"
+                className="bg-navy-blue hover:bg-navy-blue/90 text-white px-8 py-3 rounded-lg font-medium transition-colors"
               >
-                Partner With Us
-              </Button>
-              <Button
-                variant="outline"
-                onClick={() => scrollToSection("contact")}
-                className="border-2 border-navy-blue text-navy-blue px-8 py-3 rounded-lg font-semibold hover:bg-navy-blue hover:text-white transition-colors"
-              >
-                Meet Our Team
+                Get Started Today
               </Button>
             </div>
           </div>
 
-          <div className="space-y-8">
-            <img
-              src={hero_image_2}
-              alt="African professionals collaborating on technology"
-              className="rounded-2xl shadow-lg w-full h-auto"
-            />
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl text-center">
-                <div className="text-3xl font-bold text-navy-blue mb-2">5+</div>
-                <div className="text-sm text-blue-grey">Years Experience</div>
-              </div>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl text-center">
-                <div className="text-3xl font-bold text-blue-grey mb-2">25+</div>
-                <div className="text-sm text-blue-grey">Expert Team Members</div>
+          <div className="relative">
+            <div className="bg-gradient-mesh rounded-3xl p-8 text-white relative overflow-hidden">
+              <div className="absolute inset-0 bg-black/20 rounded-3xl"></div>
+              <div className="relative z-10">
+                <h3 className="text-2xl font-montserrat font-bold mb-4">
+                  Ready to Transform Your Business?
+                </h3>
+                <p className="font-worksans text-lg opacity-90 mb-6">
+                  Join forward-thinking companies already leveraging our
+                  automation and AI solutions.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">50+</div>
+                    <div className="text-sm opacity-80">Projects Delivered</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">15+</div>
+                    <div className="text-sm opacity-80">Happy Clients</div>
+                  </div>
+                </div>
+                <Button
+                  onClick={() => scrollToSection("contact")}
+                  variant="secondary"
+                  className="w-full bg-white text-navy-blue hover:bg-gray-100"
+                >
+                  Start Your Project
+                </Button>
               </div>
             </div>
           </div>

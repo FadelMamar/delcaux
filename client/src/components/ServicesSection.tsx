@@ -18,7 +18,7 @@ export default function ServicesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-montserrat font-bold text-navy-blue mb-4">
-            {t('services.title')}
+            {t("services.title")}
           </h2>
         </div>
 
@@ -30,23 +30,25 @@ export default function ServicesSection() {
                 <Settings className="text-white h-8 w-8" />
               </div>
               <CardTitle className="text-xl font-montserrat font-semibold text-navy-blue">
-                {t('services.automation.title')}
+                {t("services.automation.title")}
               </CardTitle>
-              <Badge variant="secondary" className="w-fit">{t('services.automation.badge')}</Badge>
+              <Badge variant="secondary" className="w-fit">
+                {t("services.automation.badge")}
+              </Badge>
             </CardHeader>
             <CardContent className="pt-0">
               <ul className="text-sm text-blue-grey space-y-2">
                 <li className="flex items-center">
                   <Check className="text-navy-blue mr-2 h-4 w-4" />
-                  {t('services.automation.feature1')}
+                  {t("services.automation.feature1")}
                 </li>
                 <li className="flex items-center">
                   <Check className="text-navy-blue mr-2 h-4 w-4" />
-                  {t('services.automation.feature2')}
+                  {t("services.automation.feature2")}
                 </li>
                 <li className="flex items-center">
                   <Check className="text-navy-blue mr-2 h-4 w-4" />
-                  {t('services.automation.feature3')}
+                  {t("services.automation.feature3")}
                 </li>
               </ul>
             </CardContent>
@@ -59,26 +61,25 @@ export default function ServicesSection() {
                 <Database className="text-white h-8 w-8" />
               </div>
               <CardTitle className="text-xl font-montserrat font-semibold text-navy-blue">
-                {t('services.odoo.title')}
+                {t("services.odoo.title")}
               </CardTitle>
-              <Badge variant="outline" className="w-fit">{t('services.odoo.badge')}</Badge>
+              <Badge variant="outline" className="w-fit">
+                {t("services.odoo.badge")}
+              </Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="font-worksans text-blue-grey mb-6">
-                {t('services.odoo.description')}
-              </p>
               <ul className="text-sm text-blue-grey space-y-2">
                 <li className="flex items-center">
                   <Check className="text-blue-grey mr-2 h-4 w-4" />
-                  {t('services.odoo.feature1')}
+                  {t("services.odoo.feature1")}
                 </li>
                 <li className="flex items-center">
                   <Check className="text-blue-grey mr-2 h-4 w-4" />
-                  {t('services.odoo.feature2')}
+                  {t("services.odoo.feature2")}
                 </li>
                 <li className="flex items-center">
                   <Check className="text-blue-grey mr-2 h-4 w-4" />
-                  {t('services.odoo.feature3')}
+                  {t("services.odoo.feature3")}
                 </li>
               </ul>
             </CardContent>
@@ -91,14 +92,16 @@ export default function ServicesSection() {
                 <Brain className="text-white h-8 w-8" />
               </div>
               <CardTitle className="text-xl font-montserrat font-semibold text-navy-blue">
-                {t('services.ai.title')}
+                {t("services.ai.title")}
               </CardTitle>
-              <Badge variant="destructive" className="w-fit bg-terracotta hover:bg-terracotta/80">{t('services.ai.badge')}</Badge>
+              <Badge
+                variant="destructive"
+                className="w-fit bg-terracotta hover:bg-terracotta/80"
+              >
+                {t("services.ai.badge")}
+              </Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="font-worksans text-blue-grey mb-6">
-                {t('services.ai.description')}
-              </p>
               <ul className="text-sm text-blue-grey space-y-2">
                 <li className="flex items-center">
                   <Check className="text-terracotta mr-2 h-4 w-4" />
@@ -123,14 +126,13 @@ export default function ServicesSection() {
                 <GraduationCap className="text-white h-8 w-8" />
               </div>
               <CardTitle className="text-xl font-montserrat font-semibold text-navy-blue">
-                {t('services.training.title')}
+                {t("services.training.title")}
               </CardTitle>
-              <Badge className="w-fit bg-warm-gold hover:bg-warm-gold/80">{t('services.training.badge')}</Badge>
+              <Badge className="w-fit bg-warm-gold hover:bg-warm-gold/80">
+                {t("services.training.badge")}
+              </Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="font-worksans text-blue-grey mb-6">
-                {t('services.training.description')}
-              </p>
               <ul className="text-sm text-blue-grey space-y-2">
                 <li className="flex items-center">
                   <Check className="text-warm-gold mr-2 h-4 w-4" />
@@ -148,8 +150,6 @@ export default function ServicesSection() {
             </CardContent>
           </Card>
         </div>
-
-
       </div>
     </section>
   );
