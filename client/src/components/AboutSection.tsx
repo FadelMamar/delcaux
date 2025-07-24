@@ -80,34 +80,11 @@ export default function AboutSection() {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-mesh rounded-3xl p-8 text-white relative overflow-hidden">
-              <div className="relative z-10">
-                <h3 className="text-2xl font-montserrat font-bold mb-4">
-                  Ready to Transform Your Business?
-                </h3>
-                <p className="font-worksans text-lg opacity-90 mb-6">
-                  Join forward-thinking companies already leveraging our
-                  automation and AI solutions.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">50+</div>
-                    <div className="text-sm opacity-80">Projects Delivered</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">15+</div>
-                    <div className="text-sm opacity-80">Happy Clients</div>
-                  </div>
-                </div>
-                <Button
-                  onClick={() => scrollToSection("contact")}
-                  variant="secondary"
-                  className="w-full bg-white text-navy-blue hover:bg-gray-100"
-                >
-                  Start Your Project
-                </Button>
-              </div>
-            </div>
+            <img
+              src={hero_image_2}
+              alt="Modern office workspace representing digital transformation"
+              className="w-full h-[600px] object-cover rounded-2xl shadow-lg"
+            />
           </div>
         </div>
       </div>
