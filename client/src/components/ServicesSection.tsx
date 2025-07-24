@@ -35,9 +35,6 @@ export default function ServicesSection() {
               <Badge variant="secondary" className="w-fit">{t('services.automation.badge')}</Badge>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="font-worksans text-blue-grey mb-6">
-                {t('services.automation.description')}
-              </p>
               <ul className="text-sm text-blue-grey space-y-2">
                 <li className="flex items-center">
                   <Check className="text-navy-blue mr-2 h-4 w-4" />
