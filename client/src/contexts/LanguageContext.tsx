@@ -48,7 +48,7 @@ const translations = {
 
     // Hero Section
     'hero.title': 'Automate. Integrate. Innovate.',
-    'hero.subtitle': 'Empowering West African businesses with AI, automation, and Odoo ERP.',
+    'hero.subtitle': 'Empowering African businesses with AI, automation, and Odoo ERP.',
     'hero.cta1': "Let's Automate Your Business",
     'hero.cta2': 'Learn More',
     'hero.clients': 'Clients Served',
@@ -158,7 +158,7 @@ const translations = {
 
     // Hero Section
     'hero.title': 'Automatiser. Intégrer. Innover.',
-    'hero.subtitle': 'Autonomiser les entreprises ouest-africaines avec l\'IA, l\'automatisation et Odoo ERP.',
+    'hero.subtitle': 'Autonomiser les entreprises africaines avec l\'IA, l\'automatisation et Odoo ERP.',
     'hero.cta1': 'Automatisons Votre Entreprise',
     'hero.cta2': 'En Savoir Plus',
     'hero.clients': 'Clients Servis',
