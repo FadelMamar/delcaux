@@ -35,20 +35,7 @@ export default function HeroSection() {
               </Button>
             </div>
 
-            <div className="flex items-center space-x-8 pt-8">
-              <div className="text-center">
-                <div className="text-3xl font-montserrat font-bold text-navy-blue">50+</div>
-                <div className="text-sm font-lato text-blue-grey">{t('hero.clients')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-montserrat font-bold text-blue-grey">100+</div>
-                <div className="text-sm font-lato text-blue-grey">{t('hero.projects')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-montserrat font-bold text-warm-gold">8</div>
-                <div className="text-sm font-lato text-blue-grey">{t('hero.countries')}</div>
-              </div>
-            </div>
+            
           </div>
 
           <div className="relative">
