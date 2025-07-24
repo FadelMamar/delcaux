@@ -59,12 +59,6 @@ export default function HeroSection() {
             />
 
             {/* Floating cards */}
-            <div className="absolute -top-4 -left-4 bg-white p-4 rounded-xl shadow-lg">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-lato font-medium">{t('hero.aiProcessing')}</span>
-              </div>
-            </div>
 
             <div className="absolute -bottom-4 -right-4 bg-navy-blue text-white p-4 rounded-xl shadow-lg">
               <div className="text-2xl font-bold">99.9%</div>
