@@ -1,6 +1,8 @@
 import { Target, Eye, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import hero_image_2 from "@assets/hero-image-2.jpg";
+
 export default function AboutSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -84,7 +86,7 @@ export default function AboutSection() {
 
           <div className="space-y-8">
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400"
+              src={hero_image_2}
               alt="African professionals collaborating on technology"
               className="rounded-2xl shadow-lg w-full h-auto"
             />
