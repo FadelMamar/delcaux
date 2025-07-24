@@ -15,14 +15,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img 
-                src={logoPath} 
-                alt="Delcaux Consulting Logo" 
-                className="w-10 h-10 object-contain" 
-              />
-              <div className="text-3xl font-montserrat font-bold">Delcaux</div>
-            </div>
+            <div className="text-3xl font-montserrat font-bold">Delcaux</div>
             <p className="font-lato text-blue-200 leading-relaxed">
               Empowering West African businesses through automation and AI 
               solutions that drive real transformation.
