@@ -81,7 +81,6 @@ export default function AboutSection() {
 
           <div className="relative">
             <div className="bg-gradient-mesh rounded-3xl p-8 text-white relative overflow-hidden">
-              <div className="absolute inset-0 bg-black/20 rounded-3xl"></div>
               <div className="relative z-10">
                 <h3 className="text-2xl font-montserrat font-bold mb-4">
                   Ready to Transform Your Business?
