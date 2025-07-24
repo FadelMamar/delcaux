@@ -60,7 +60,7 @@ const translations = {
     'services.title': 'Our Services',
     'services.subtitle': 'Comprehensive digital transformation solutions designed specifically for West African businesses and organizations.',
     
-    'services.automation.title': 'Business Process Automation',
+    'services.automation.title': 'Process Automation',
     'services.automation.description': 'Streamline workflows, digitize data systems, and eliminate manual processes to boost efficiency and reduce costs.',
     'services.automation.feature1': 'Digital Workflows',
     'services.automation.feature2': 'Data Systems',
@@ -170,7 +170,7 @@ const translations = {
     'services.title': 'Nos Services',
     'services.subtitle': 'Solutions complètes de transformation numérique conçues spécifiquement pour les entreprises et organisations ouest-africaines.',
     
-    'services.automation.title': 'Automatisation des Processus Métier',
+    'services.automation.title': 'Automatisation des Processus',
     'services.automation.description': 'Rationalisez les flux de travail, numérisez les systèmes de données et éliminez les processus manuels pour augmenter l\'efficacité et réduire les coûts.',
     'services.automation.feature1': 'Flux de Travail Numériques',
     'services.automation.feature2': 'Systèmes de Données',
