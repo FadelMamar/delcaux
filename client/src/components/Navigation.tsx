@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation, useRouter } from "wouter";
+import { Link, useLocation } from "wouter";
 import MobileMenu from "./MobileMenu";
 import LanguageSelector from "./LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -8,15 +8,14 @@ import { Menu } from "lucide-react";
 import logoPath from "@assets/logo_delcaux_consulting_1753365185310.jpg";
 
 export default function Navigation() {
-  const [location] = useLocation();
-  const router = useRouter();
+  const [location, navigate] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useLanguage();
 
   const handleNavigation = (sectionId: string) => {
     // If we're not on the home page, navigate to home first
     if (location !== "/") {
-      router.push(`/#${sectionId}`);
+      navigate(`/#${sectionId}`);
       return;
     }
 
