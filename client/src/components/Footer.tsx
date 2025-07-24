@@ -1,4 +1,3 @@
-import Logo from "./Logo";
 import { Linkedin, Twitter, Facebook } from "lucide-react";
 
 export default function Footer() {
@@ -16,7 +15,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <Logo className="w-8 h-8 text-white" />
+              <img 
+                src="/attached_assets/logo_DelcauxConsulting (2)_1753364072296.jpg" 
+                alt="Delcaux Consulting Logo" 
+                className="w-10 h-10 object-contain" 
+              />
               <div className="text-3xl font-playfair font-bold">Delcaux</div>
             </div>
             <p className="text-blue-200 leading-relaxed">

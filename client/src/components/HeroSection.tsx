@@ -17,7 +17,7 @@ export default function HeroSection() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold text-navy-blue leading-tight">
                 Empowering West African businesses through{" "}
                 <span className="text-blue-grey">automation</span> and{" "}
-                <span className="text-terracotta">AI</span>
+                <span className="text-navy-blue">AI</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Transform your operations with cutting-edge technology solutions 

@@ -10,6 +10,12 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+**Logo Integration & Color Refinements (January 2025)**
+- Integrated official Delcaux Consulting logo across all components (Navigation, Footer, Mobile Menu)
+- Replaced previous SVG logo with authentic brand logo for consistent identity
+- Removed orange/terracotta color from "AI" text in hero section for cleaner design
+- Updated all logo references to use the real brand asset
+
 **Brand Color Palette Update (January 2025)**
 - Updated entire website to use the new Delcaux Consulting brand colors
 - Primary Color: Dark Navy Blue (#0B1F3A) - used for headers, navigation, buttons, and key highlights

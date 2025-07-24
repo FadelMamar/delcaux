@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
@@ -23,7 +22,11 @@ export default function Navigation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-3">
-              <Logo className="w-8 h-8 text-navy-blue" />
+              <img 
+                src="/attached_assets/logo_DelcauxConsulting (2)_1753364072296.jpg" 
+                alt="Delcaux Consulting Logo" 
+                className="w-10 h-10 object-contain" 
+              />
               <span className="text-2xl font-playfair font-bold text-navy-blue">
                 Delcaux
               </span>
