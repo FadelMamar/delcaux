@@ -178,7 +178,7 @@ export default function CaseStudies() {
           <p className="text-xl font-worksans text-navy-blue/90 mb-8 max-w-2xl mx-auto">
             {t("caseStudies.ctaSubtitle")}
           </p>
-          <Link href="/">
+          <Link href="/#contact">
             <Button className="bg-navy-blue hover:bg-navy-blue/90 text-white px-8 py-3 rounded-lg font-lg transition-colors">
               {t("caseStudies.ctaButton")}
             </Button>

@@ -287,11 +287,11 @@ export default function ContactSection() {
                     <MapPin className="text-white h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-medium text-navy-blue">Office</div>
+                    <div className="font-medium text-navy-blue">
+                      {t("contact.info.office")}
+                    </div>
                     <div className="text-blue-grey">
-                      Niamey, Niger
-                      <br />
-                      West Africa
+                      {t("contact.info.location")}
                     </div>
                   </div>
                 </div>
@@ -314,7 +314,7 @@ export default function ContactSection() {
             {/* Social Media */}
             <div className="bg-white p-8 rounded-2xl shadow-sm">
               <h3 className="text-xl font-semibold text-navy-blue mb-6">
-                Follow Us
+                {t("contact.followus")}
               </h3>
               <div className="flex space-x-4">
                 <a
@@ -330,25 +330,25 @@ export default function ContactSection() {
             <div className="gradient-navy-blue p-8 rounded-2xl text-white">
               <h3 className="text-xl font-semibold mb-4 flex items-center">
                 <Clock className="mr-2 h-5 w-5" />
-                Business Hours
+                {t("contact.info.hours")}
               </h3>
               <div className="space-y-2 text-blue-100">
                 <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 5:00 PM</span>
+                  <span>{t("contact.info.hours.mondayFriday")}</span>
+                  <span>{t("contact.info.hours.time")}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>Closed</span>
+                  <span>{t("contact.info.hours.saturday")}</span>
+                  <span>{t("contact.info.hours.closed")}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>Closed</span>
+                  <span>{t("contact.info.hours.sunday")}</span>
+                  <span>{t("contact.info.hours.closed")}</span>
                 </div>
               </div>
               <div className="mt-4 pt-4 border-t border-blue-400">
                 <p className="text-sm text-blue-100">
-                  West Africa Time (GMT+1)
+                  {t("contact.info.hours.timezone")}
                 </p>
               </div>
             </div>

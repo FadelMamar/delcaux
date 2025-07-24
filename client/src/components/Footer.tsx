@@ -26,9 +26,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="text-3xl font-montserrat font-bold">{t('nav.delcaux')}</div>
+            <div className="text-3xl font-montserrat font-bold">
+              {t("nav.delcaux")}
+            </div>
             <p className="font-worksans text-blue-200 leading-relaxed">
-              {t('footer.description')}
+              {t("footer.description")}
             </p>
             <div className="flex space-x-4">
               <a
@@ -43,7 +45,7 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="text-lg font-montserrat font-semibold mb-4">
-              {t('footer.services')}
+              {t("footer.services")}
             </h4>
             <ul className="space-y-2 text-blue-200">
               <li>
@@ -51,7 +53,7 @@ export default function Footer() {
                   onClick={() => handleNavigation("services")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  {t('footer.businessAutomation')}
+                  {t("footer.businessAutomation")}
                 </button>
               </li>
               <li>
@@ -59,7 +61,7 @@ export default function Footer() {
                   onClick={() => handleNavigation("services")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  {t('footer.odooERP')}
+                  {t("footer.odooERP")}
                 </button>
               </li>
               <li>
@@ -67,7 +69,7 @@ export default function Footer() {
                   onClick={() => handleNavigation("services")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  {t('footer.aiSolutions')}
+                  {t("footer.aiSolutions")}
                 </button>
               </li>
               <li>
@@ -75,7 +77,7 @@ export default function Footer() {
                   onClick={() => handleNavigation("services")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  {t('footer.training')}
+                  {t("footer.training")}
                 </button>
               </li>
             </ul>
@@ -83,14 +85,16 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-montserrat font-semibold mb-4">{t('footer.company')}</h4>
+            <h4 className="text-lg font-montserrat font-semibold mb-4">
+              {t("footer.company")}
+            </h4>
             <ul className="space-y-2 text-blue-200">
               <li>
                 <button
                   onClick={() => handleNavigation("about")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  {t('footer.about')}
+                  {t("footer.about")}
                 </button>
               </li>
               <li>
@@ -98,15 +102,7 @@ export default function Footer() {
                   onClick={() => handleNavigation("contact")}
                   className="hover:text-white transition-colors text-left"
                 >
-                  {t('footer.contact')}
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleNavigation("contact")}
-                  className="hover:text-white transition-colors text-left"
-                >
-                  {t('footer.contact')}
+                  {t("footer.contact")}
                 </button>
               </li>
             </ul>
@@ -114,14 +110,16 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="text-lg font-montserrat font-semibold mb-4">Resources</h4>
+            <h4 className="text-lg font-montserrat font-semibold mb-4">
+              Resources
+            </h4>
             <ul className="space-y-2 text-blue-200">
               <li>
                 <a
                   href="/case-studies"
                   className="hover:text-white transition-colors"
                 >
-                  {t('nav.caseStudies')}
+                  {t("nav.caseStudies")}
                 </a>
               </li>
             </ul>
@@ -130,20 +128,20 @@ export default function Footer() {
 
         <div className="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-blue-200 text-sm">
-            © 2025 {t('nav.delcaux')}. {t('footer.rights')}
+            © 2025 {t("nav.delcaux")}. {t("footer.rights")}
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
               href="#"
               className="text-blue-200 hover:text-white transition-colors text-sm"
             >
-              {t('footer.privacy')}
+              {t("footer.privacy")}
             </a>
             <a
               href="#"
               className="text-blue-200 hover:text-white transition-colors text-sm"
             >
-              {t('footer.terms')}
+              {t("footer.terms")}
             </a>
           </div>
         </div>

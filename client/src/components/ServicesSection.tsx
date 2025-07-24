@@ -140,10 +140,6 @@ export default function ServicesSection() {
                 </li>
                 <li className="flex items-center">
                   <Check className="text-warm-gold mr-2 h-4 w-4" />
-                  School Programs
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-warm-gold mr-2 h-4 w-4" />
                   Corporate Workshops
                 </li>
               </ul>
