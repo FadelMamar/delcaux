@@ -26,7 +26,7 @@ export default function Navigation() {
               <img 
                 src={logoPath} 
                 alt="Delcaux Consulting Logo" 
-                className="w-10 h-10 object-contain" 
+                className="w-16 h-16 object-contain" 
               />
               <span className="text-2xl font-playfair font-bold text-navy-blue">
                 Delcaux
