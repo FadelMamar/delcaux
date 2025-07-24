@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Facebook } from "lucide-react";
+import logoPath from "@assets/logo_delcaux_consulting_1753364800001.jpg";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -16,7 +17,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/attached_assets/logo_delcaux_consulting_1753364800001.jpg" 
+                src={logoPath} 
                 alt="Delcaux Consulting Logo" 
                 className="w-10 h-10 object-contain" 
               />

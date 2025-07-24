@@ -1,5 +1,6 @@
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoPath from "@assets/logo_delcaux_consulting_1753364800001.jpg";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -22,7 +23,7 @@ export default function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuPr
         <div className="flex items-center justify-between p-4 border-b">
           <div className="flex items-center space-x-3">
             <img 
-              src="/attached_assets/logo_delcaux_consulting_1753364800001.jpg" 
+              src={logoPath} 
               alt="Delcaux Consulting Logo" 
               className="w-8 h-8 object-contain" 
             />
