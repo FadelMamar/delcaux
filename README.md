@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/image.png" alt="PoC" style="max-width: 50%; height: auto;"/>
+  <img src="assets/delcaux-website.png" alt="PoC" style="max-width: 50%; height: auto;"/>
 </div>
 # Delcaux Digital Transformation Agency
 
