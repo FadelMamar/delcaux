@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="assets/image.png" alt="PoC" style="max-width: 50%; height: auto;"/>
+</div>
 # Delcaux Digital Transformation Agency
 
 Welcome to the Delcaux project! This is a dynamic website for **Delcaux**, a digital transformation agency based in Niger.
